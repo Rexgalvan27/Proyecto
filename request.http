@@ -1,0 +1,148 @@
+###Usuarios-CREATE
+POST http://localhost:9000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+  "correo": "",
+  "contraseña": "",
+  "nombre": "",
+  "edad": ,
+  "rol": "",
+  "sucursal": ""
+}
+###Usuarios-LIST
+GET http://localhost:9000/api/usuarios HTTP/1.1
+
+###Usuarios-BUSCAR_USER(ID)
+GET http://localhost:9000/api/usuarios/ HTTP/1.1
+
+###Usuarios-DELETE_USER(ID)
+Delete http://localhost:9000/api/usuarios/ HTTP/1.1
+
+###Usuarios-UPDATE_USER(ID)
+PUT  http://localhost:9000/api/usuarios/ HTTP/1.1
+Content-Type: application/json
+{
+  "correo": "",
+  "contraseña": "",
+  "nombre": "",
+  "edad": ,
+  "rol": "",
+  "sucursal": ""
+}
+
+
+
+
+###Sucursales-Create
+POST http://localhost:9000/api/sucursal HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "",
+  "codigo": ,
+  "telefono": ,
+  "direccion": "",
+  "ubicacion": "",
+  "status": ""
+}
+
+###Sucursales-LIST
+GET http://localhost:9000/api/sucursal HTTP/1.1
+
+###Sucursales-UPDATE_USER(ID)
+PUT  http://localhost:9000/api/sucursal/63503234b7c9e69dae63eaf4 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "aa",
+  "telefono": 13,
+  "direccion": "bb",
+  "status": "vencido"
+}
+
+
+
+
+
+
+
+###Roles-list
+GET http://localhost:9000/api/roles HTTP/1.1
+
+
+
+
+
+
+
+
+###Ventas-REGISTER SALES
+POST http://localhost:9000/api/ventas HTTP/1.1
+Content-Type: application/json
+
+{
+  "total": "",
+  "sucursal": "",
+  "usuario": "",
+  "metodo_pago": ""
+}
+
+###Ventas-LIST SALES
+GET http://localhost:9000/api/ventas HTTP/1.1
+
+
+
+
+
+
+
+
+
+
+###pagos-LIST PAY
+GET http://localhost:9000/api/pagos HTTP/1.1
+
+###pagos-DETALLES PAY
+GET http://localhost:9000/api/ventas/ HTTP/1.1
+
+
+
+
+
+
+
+###Productos-CREATE
+POST http://localhost:9000/api/productos HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Agua",
+  "sku": 242423,
+  "stock": 1,
+  "sucursal": "Otay",
+  "precio": "12",
+  "status": "Stock"
+}
+###Productos-LIST
+GET http://localhost:9000/api/productos HTTP/1.1
+
+###Productos-BUSCAR_PRODUCTO(KDI)XXX
+GET http://localhost:9000/api/productos/:sku=242423 HTTP/1.1
+
+###Productos-DELETE_PRODUCTO(ID)
+Delete http://localhost:9000/api/productos/63507775d14775d89cf769b9 HTTP/1.1
+
+###Productos-UPDATE_PRODUCTO(ID)
+PUT  http://localhost:9000/api/productos/635080a52e6272ce7749676c HTTP/1.1
+Content-Type: application/json
+{
+  "nombre": "Aguaaa",
+  "sku": 24242223,
+  "stock": 13,
+  "sucursal": "fsaf",
+  "precio": "124212"
+}
+
+
+
